@@ -5,7 +5,10 @@ on:
     branches: [ "master" ]
   push:
     branches: [ "master" ]
-
+    
+permissions:
+  contents: write
+  
 jobs:
   build-test:
     name: Compile and test application
