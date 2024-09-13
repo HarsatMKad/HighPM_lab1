@@ -1,27 +1,24 @@
 package org.example;
 
-import java.util.Arrays;
-import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
-        System.out.println(Arrays.toString(enumeration()));
+        //System.out.println(Arrays.toString(enumeration()));
 
-        String test_word = "make install";
-        System.out.println(reversString(test_word));
+        //String testWord = "make install";
+        //System.out.println(reversString(testWord));
 
-        System.out.println(realRoots(1.0, 2.0, -4.0));
+        //System.out.println(realRoots(1.0, 2.0, -4.0));
 
-        System.out.printf( "%.10f", sumSeries());
+        //System.out.printf("%.10f", sumSeries());
 
-        System.out.println(palindrome("salas"));
+        //System.out.println(palindrome("salas"));
     }
 
     static String[] enumeration(){
         String[] result = new String[500];
         for (int i = 1; i <= 500; i++){
-            boolean divisionFive = i%5 == 0;
-            boolean divisionSeven = i%7 == 0;
+            boolean divisionFive = i % 5 == 0;
+            boolean divisionSeven = i % 7 == 0;
             result[i-1] = "";
 
             if(divisionFive){
@@ -77,10 +74,10 @@ public class Main {
     }
 
     static boolean palindrome(String word){
-        String rewersWord = reversString(word);
+        String reversWord = reversString(word);
 
         for(int i = 0; i < word.length(); i++){
-            if(word.charAt(0) != rewersWord.charAt(0)){
+            if(word.charAt(i) != reversWord.charAt(i)){
                 return false;
             }
         }
